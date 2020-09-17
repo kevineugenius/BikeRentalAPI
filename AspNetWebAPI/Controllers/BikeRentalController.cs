@@ -138,7 +138,7 @@ namespace AspNetWebAPI.Controllers
         {
             List<BikeData> result = new List<BikeData>();
             // skip header line
-            for (int i = 1; i < 5; i++) //shortened for ease of view
+            for (int i = 1; i < 100; i++) //shortened for ease of view
             {
                 var temp = new BikeData();
                 var currentLine = data[i].Split(',');
