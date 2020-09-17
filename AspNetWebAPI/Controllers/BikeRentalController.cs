@@ -11,7 +11,7 @@ namespace AspNetWebAPI.Controllers
     {
         private List<BikeData> dataset = new List<BikeData>();
 
-        //https://localhost:44304/api/BikeRental/Get
+        //http://localhost:9001/api/BikeRental/Get
         public JsonResult<BikeResponse> Get()
         {
             var returnMe = new BikeResponse();
@@ -34,7 +34,7 @@ namespace AspNetWebAPI.Controllers
             return Json(returnMe);
         }
 
-        //https://localhost:44304/api/BikeRental/GetAll
+        //https://localhost:9001/api/BikeRental/GetAll
         public JsonResult<List<BikeData>> GetAll()
         {
             if (dataset.Count == 0)
@@ -44,7 +44,7 @@ namespace AspNetWebAPI.Controllers
             return Json(dataset); 
         }
 
-        // https://localhost:44304/api/BikeRental/Get2?request=rentals
+        // https://localhost:9001/api/BikeRental/Get2?request=rentals
         public JsonResult<BikeResponse> Get2(string request)
         {
             if (dataset.Count == 0)
